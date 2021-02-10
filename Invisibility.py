@@ -13,8 +13,7 @@ background = np.flip(background,axis=1)
 
 while(cap.isOpened()):
     ret, img = cap.read()
-
-    # Flip the image 
+ 
     img = np.flip(img, axis = 1)
 
     hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
